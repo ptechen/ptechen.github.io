@@ -7,6 +7,9 @@ branches:
   only:
     - dev # build dev branch only
 script:
+  - npm install lodash.reject
+  - npm install lodash.flatten
+  - npm install lodash.some
   - npm install lodash.defaults
   - npm install lodash.foreach
   - npm install lodash.bind
