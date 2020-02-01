@@ -8,6 +8,7 @@ branches:
     - dev # build dev branch only
 script:
   - hexo generate # generate static files
+  - npm install css-select
 deploy:
   provider: pages
   skip-cleanup: true
