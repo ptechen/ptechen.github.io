@@ -7,10 +7,11 @@ branches:
   only:
     - dev # build dev branch only
 script:
+  - npm install lodash.bind
   - npm install css-select
   - npm install lodash.map
   - npm install lodash.assignin
-  - npm install 
+  - npm install lodash.merge
   - npm install lodash.pick
   - hexo generate # generate static files
 deploy:
