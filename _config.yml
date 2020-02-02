@@ -98,4 +98,6 @@ theme: obsidian
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/ptechen/ptechen.github.io.git
+  branch: dev
