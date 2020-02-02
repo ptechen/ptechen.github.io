@@ -1,7 +1,7 @@
 ---
 title: 如何统计不同电话号码的个数？
 date: 2020-02-01 20:18:55
-type: "categories/count-different-phone-numbers.html"
+categories: algo
 ---
 
 
