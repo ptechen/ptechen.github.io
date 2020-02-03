@@ -5,7 +5,7 @@ categories: Rust
 tags: Rust
 ---
 
-[![Version info](https://img.shields.io/crates/v/rsmd5.svg)](https://crates.io/crates/rsmd5)
+![![Version info](https://img.shields.io/crates/v/rsmd5.svg)](https://crates.io/crates/rsmd5)
 
 Install:
 
