@@ -5,7 +5,7 @@ categories: Rust
 tags: Rust
 ---
 
-![![Version info](https://img.shields.io/crates/v/rsmd5.svg)](https://crates.io/crates/rsmd5)
+[![Version info](https://img.shields.io/crates/v/rsmd5.svg)](https://crates.io/crates/rsmd5)
 
 Install:
 
@@ -25,4 +25,3 @@ OPTIONS:
     -i, --input <input>      Input string or file path
     -o, --output <output>    Output uppercase or lowercase,  o = (u or l) [default: l]
     -t, --t <t>              Input-type t = (str or file) [default: str]
-
