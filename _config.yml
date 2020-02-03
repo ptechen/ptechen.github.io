@@ -100,4 +100,4 @@ theme: obsidian
 deploy:
   type: git
   repo: https://github.com/ptechen/ptechen.github.io.git
-  branch: dev
+  branch: master

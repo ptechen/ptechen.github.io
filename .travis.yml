@@ -20,7 +20,7 @@ script:
   - npm install lodash.assignin
   - npm install lodash.merge
   - npm install lodash.pick
-  - hexo clean && hexo generate # generate static files
+  - hexo generate # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
