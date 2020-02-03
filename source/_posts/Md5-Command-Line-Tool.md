@@ -18,10 +18,14 @@ USAGE:
 FLAGS:
 
     -h, --help       Prints help information
+
     -V, --version    Prints version information
+
 
 OPTIONS:
 
     -i, --input <input>      Input string or file path
+
     -o, --output <output>    Output uppercase or lowercase,  o = (u or l) [default: l]
+
     -t, --t <t>              Input-type t = (str or file) [default: str]
