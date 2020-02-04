@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ptechen/hexo-theme-obsidian.git"
+    "url": "git+https://github.com/TriDiamond/hexo-theme-obsidian.git"
   },
   "keywords": [
     "hexo-theme",
@@ -18,9 +18,9 @@
   "author": "TriDiamond",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ptechen/hexo-theme-obsidian/issues"
+    "url": "https://github.com/TriDiamond/hexo-theme-obsidian/issues"
   },
-  "homepage": "https://github.com/ptechen/hexo-theme-obsidian#readme",
+  "homepage": "https://github.com/TriDiamond/hexo-theme-obsidian#readme",
   "private": true,
   "devDependencies": {
     "hexo-wordcount": "^6.0.1",

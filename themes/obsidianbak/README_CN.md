@@ -8,10 +8,10 @@ v1.x | ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 ![License](https://img.shields.io/github/license/TriDiamond/hexo-theme-obsidian)
 [![Join the chat at https://gitter.im/TriDiamond/hexo-theme-obsidian](https://badges.gitter.im/TriDiamond/hexo-theme-obsidian.svg)](https://gitter.im/TriDiamond/hexo-theme-obsidian?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**[预览](http://tridiamond.me)** | **[更变日志](https://github.com/ptechen/hexo-theme-obsidian/blob/master/CHANGELOG_CN.md)**
+**[预览](http://tridiamond.me)** | **[更变日志](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG_CN.md)**
 
-🇺🇸 **[English Doc](https://github.com/ptechen/hexo-theme-obsidian/blob/master/README.md)** |
-**[ChangeLog](https://github.com/ptechen/hexo-theme-obsidian/blob/master/CHANGELOG.md)**
+🇺🇸 **[English Doc](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/README.md)** |
+**[ChangeLog](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md)**
 
 ![screenshot](https://res.cloudinary.com/tridiamond/image/upload/v1573323147/blog/A-Obsidian-full_ubmo0d.png)
 
@@ -34,7 +34,7 @@ v1.x | ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 ## 安装
 
 ``` bash
-$ git clone https://github.com/ptechen/hexo-theme-obsidian.git obsidian
+$ git clone https://github.com/TriDiamond/hexo-theme-obsidian.git obsidian
 ```
 
 ## 使用
@@ -165,7 +165,7 @@ symbols_count_time:
   suffix: mins.
 
 # html截取插件（用于首页截取内容）
-# see https://github.com/ptechen/hexo-html-truncate
+# see https://github.com/TriDiamond/hexo-html-truncate
 html_truncate:
   enable: true
   # 文章保留多少个字符
@@ -373,14 +373,14 @@ hexo clean && hexo g
 
 ## 相关
 
-做了一个 [`Typro`](https://typora.io/) 主题 [`Obsidian`](https://github.com/ptechen/typro-theme-obsidian) 专门给写博客的你们.
+做了一个 [`Typro`](https://typora.io/) 主题 [`Obsidian`](https://github.com/TriDiamond/typro-theme-obsidian) 专门给写博客的你们.
 
 ## 反馈
 
-> 大家记得先看一下[ISSUE](https://github.com/ptechen/hexo-theme-obsidian/issues)里面有没有你的问题，已经解答了的。
+> 大家记得先看一下[ISSUE](https://github.com/TriDiamond/hexo-theme-obsidian/issues)里面有没有你的问题，已经解答了的。
 > 很有可能你的问题已经被问过了，或者可以在Issue里面就找到答案了！谢谢配合！
 
 可以通过以下方式反馈问题：
 
-- [创建新 issue!](https://github.com/ptechen/hexo-theme-obsidian/issues/new)
+- [创建新 issue!](https://github.com/TriDiamond/hexo-theme-obsidian/issues/new)
 - 加入QQ群 `909955326`

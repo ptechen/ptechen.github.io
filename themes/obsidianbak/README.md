@@ -8,10 +8,10 @@ v1.x | ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 ![License](https://img.shields.io/github/license/TriDiamond/hexo-theme-obsidian)
 [![Join the chat at https://gitter.im/TriDiamond/hexo-theme-obsidian](https://badges.gitter.im/TriDiamond/hexo-theme-obsidian.svg)](https://gitter.im/TriDiamond/hexo-theme-obsidian?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**[PREVIEW](http://tridiamond.me)** | **[CHANGES](https://github.com/ptechen/hexo-theme-obsidian/blob/master/CHANGELOG.md)**
+**[PREVIEW](http://tridiamond.me)** | **[CHANGES](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md)**
 
-🇨🇳 **[中文文档](https://github.com/ptechen/hexo-theme-obsidian/blob/master/README_CN.md)** |
-   **[更变日志](https://github.com/ptechen/hexo-theme-obsidian/blob/master/CHANGELOG_CN.md)**
+🇨🇳 **[中文文档](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/README_CN.md)** |
+   **[更变日志](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG_CN.md)**
 
 ![screenshot](https://res.cloudinary.com/tridiamond/image/upload/v1573323147/blog/A-Obsidian-full_ubmo0d.png)
 
@@ -34,7 +34,7 @@ v1.x | ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 ## Install
 
 ``` bash
-git clone https://github.com/ptechen/hexo-theme-obsidian.git obsidian
+git clone https://github.com/TriDiamond/hexo-theme-obsidian.git obsidian
 ```
 
 ## Usage
@@ -169,7 +169,7 @@ symbols_count_time:
   suffix: mins.
 
 # Enable html truncate
-# see https://github.com/ptechen/hexo-html-truncate
+# see https://github.com/TriDiamond/hexo-html-truncate
 html_truncate:
   enable: true
   # Characters kept for posts
@@ -376,14 +376,14 @@ hexo clean && hexo g
 
 ## Related
 
-I have made a [`Typro`](https://typora.io/) theme [`Obsidian`](https://github.com/ptechen/typro-theme-obsidian) especially for this blog theme.
+I have made a [`Typro`](https://typora.io/) theme [`Obsidian`](https://github.com/TriDiamond/typro-theme-obsidian) especially for this blog theme.
 
 ## Feedback
 
-> Please check the [ISSUES](https://github.com/ptechen/hexo-theme-obsidian/issues) before try to use the following contact methods! 
+> Please check the [ISSUES](https://github.com/TriDiamond/hexo-theme-obsidian/issues) before try to use the following contact methods! 
 > Maybe the question you have had being asked by others or it's already being answered. Thanks!
 
 You can give me feedback or issue you have through the following methods:
 
-- [Create a issue!](https://github.com/ptechen/hexo-theme-obsidian/issues/new)
+- [Create a issue!](https://github.com/TriDiamond/hexo-theme-obsidian/issues/new)
 - Joint QQGroup `909955326`

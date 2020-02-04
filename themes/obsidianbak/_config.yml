@@ -7,9 +7,9 @@
 #! Theme Obsidian - A dark Hexo theme, it's responsive, simple but elegant.
 #! Thanks to and inspirated by CSS-Tricks
 #! @author: TriDiamond
-#! @github: https://github.com/ptechen
-#! @changelogs: https://github.com/ptechen/hexo-theme-obsidian/blob/master/CHANGELOG.md
-#! @feedbacks: https://github.com/ptechen/hexo-theme-obsidian/issues/new
+#! @github: https://github.com/TriDiamond
+#! @changelogs: https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md
+#! @feedbacks: https://github.com/TriDiamond/hexo-theme-obsidian/issues/new
 #! ---------------------------------------------------------------
 
 #! ---------------------------------------------------------------
@@ -53,7 +53,7 @@ page_titles:
 
 # Social media links
 socials:
-  github: "https://github.com/ptechen"
+  github: "https://github.com/TriDiamond"
   twitter: "https://twitter.com/TriDiamond6"
   stackoverflow: "https://stackoverflow.com/users/7602324/tridiamond?tab=profile"
 
@@ -110,9 +110,9 @@ gitalk:
   autoExpand: true
   clientID: 'ec894e2b66f752e8b7fb'
   clientSecret: '3ccc2e92bb350688fe2c2dc2930189b62622bfb1'
-  repo: 'blog-comments'
-  owner: 'TriDiamond'
-  admin: ['TriDiamond']
+  repo: 'ptechen.github.io'
+  owner: 'ptechen'
+  admin: ['ptechen']
   # Ensure uniqueness and length less than 50
   id: location.pathname
   # Facebook-like distraction
@@ -140,7 +140,7 @@ symbols_count_time:
   suffix: mins.
 
 # Enable html truncate
-# see https://github.com/ptechen/hexo-html-truncate
+# see https://github.com/TriDiamond/hexo-html-truncate
 html_truncate:
   enable: true
   # Characters kept for posts
