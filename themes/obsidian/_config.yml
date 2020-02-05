@@ -54,8 +54,8 @@ page_titles:
 # Social media links
 socials:
   github: "https://github.com/ptechen"
-  twitter: "https://twitter.com/TriDiamond6"
-  stackoverflow: "https://stackoverflow.com/users/7602324/tridiamond?tab=profile"
+  twitter: ""
+  stackoverflow: ""
 
 # Enable table of content
 TOC: true
