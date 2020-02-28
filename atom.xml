@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ptechen.github.io</id>
     <title>Gridea</title>
-    <updated>2020-02-28T02:44:22.053Z</updated>
+    <updated>2020-02-28T03:19:53.234Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ptechen.github.io"/>
     <link rel="self" href="https://ptechen.github.io/atom.xml"/>
@@ -10,6 +10,56 @@
     <logo>https://ptechen.github.io/images/avatar.png</logo>
     <icon>https://ptechen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Encrypt Command Line Tool]]></title>
+        <id>https://ptechen.github.io/post/encrypt-command-line-tool/</id>
+        <link href="https://ptechen.github.io/post/encrypt-command-line-tool/">
+        </link>
+        <updated>2020-02-28T03:17:36.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><a href="https://crates.io/crates/encrypt"><img src="https://img.shields.io/crates/v/encrypt.svg" alt="Version info" loading="lazy"></a></figure>
+<p>Support md5 &amp; sha1 &amp; sha2 &amp; sha3 encryption for file and string.</p>
+<p>Install:</p>
+<pre><code>cargo install encrypt
+</code></pre>
+<p>USAGE:</p>
+<pre><code>encrypt &lt;SUBCOMMAND&gt;
+</code></pre>
+<p>FLAGS:</p>
+<pre><code>-h, --help       Prints help information
+-V, --version    Prints version information
+</code></pre>
+<p>SUBCOMMANDS:</p>
+<pre><code>help          Prints this message or the help of the given subcommand(s)
+keccak224     
+keccak256     
+keccak384     
+keccak512     
+md5           
+sha1          
+sha224        
+sha256        
+sha3-224      
+sha3-384      
+sha3-512      
+sha384        
+sha512        
+sha512T224    
+sha512T256    
+</code></pre>
+<p>USAGE:</p>
+<pre><code>encrypt func [OPTIONS] --input &lt;input&gt;
+</code></pre>
+<p>FLAGS:</p>
+<pre><code>-h, --help       Prints help information
+-V, --version    Prints version information
+</code></pre>
+<p>OPTIONS:</p>
+<pre><code>-i, --input &lt;input&gt;      Input string or file path
+-o, --output &lt;output&gt;    Output uppercase or lowercase,  o = (u or l) [default: l]
+-t, --t &lt;t&gt;              Input-type t = (str or file) [default: str]
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://ptechen.github.io/post/hello-gridea/</id>
