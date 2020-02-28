@@ -7,19 +7,20 @@ branches:
   only:
     - hexo # build dev branch only
 script:
-  - npm install lodash.reduce --frozen-lockfile
-  - npm install lodash.filter --frozen-lockfile
-  - npm install lodash.reject --frozen-lockfile
-  - npm install lodash.flatten --frozen-lockfile
-  - npm install lodash.some --frozen-lockfile
-  - npm install lodash.defaults --frozen-lockfile
-  - npm install lodash.foreach --frozen-lockfile
-  - npm install lodash.bind --frozen-lockfile
-  - npm install css-select --frozen-lockfile
-  - npm install lodash.map --frozen-lockfile
-  - npm install lodash.assignin --frozen-lockfile
-  - npm install lodash.merge --frozen-lockfile
-  - npm install lodash.pick --frozen-lockfile
+  - yarn --frozen-lockfile --production
+  - npm install lodash.reduce
+  - npm install lodash.filter
+  - npm install lodash.reject
+  - npm install lodash.flatten
+  - npm install lodash.some
+  - npm install lodash.defaults
+  - npm install lodash.foreach
+  - npm install lodash.bind
+  - npm install css-select
+  - npm install lodash.map
+  - npm install lodash.assignin
+  - npm install lodash.merge
+  - npm install lodash.pick
   - hexo generate # generate static files
 deploy:
   provider: pages
