@@ -5,7 +5,7 @@ node_js:
 cache: npm
 branches:
   only:
-    - dev # build dev branch only
+    - hexo # build dev branch only
 script:
   - npm install lodash.reduce
   - npm install lodash.filter
@@ -28,5 +28,5 @@ deploy:
   keep-history: true
   target_branch: master
   on:
-    branch: dev
+    branch: hexo
   local-dir: public
