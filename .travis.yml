@@ -7,7 +7,6 @@ branches:
   only:
     - hexo # build dev branch only
 script:
-  - yarn --frozen-lockfile --production
   - npm install lodash.reduce
   - npm install lodash.filter
   - npm install lodash.reject
