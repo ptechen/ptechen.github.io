@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ptechen.github.io</id>
     <title>Gridea</title>
-    <updated>2020-02-28T03:55:49.816Z</updated>
+    <updated>2020-02-28T03:58:04.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ptechen.github.io"/>
     <link rel="self" href="https://ptechen.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://ptechen.github.io/images/avatar.png</logo>
     <icon>https://ptechen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Md5 Command Line Tool]]></title>
+        <id>https://ptechen.github.io/post/md5-command-line-tool/</id>
+        <link href="https://ptechen.github.io/post/md5-command-line-tool/">
+        </link>
+        <updated>2020-02-28T03:56:14.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><a href="https://crates.io/crates/rsmd5"><img src="https://img.shields.io/crates/v/rsmd5.svg" alt="Version info" loading="lazy"></a></figure>
+<p>Install:</p>
+<pre><code>cargo install rsmd5
+</code></pre>
+<p>USAGE:</p>
+<pre><code>rsmd5 [OPTIONS] --input &lt;input&gt;
+</code></pre>
+<p>FLAGS:</p>
+<pre><code>-h, --help       Prints help information
+
+-V, --version    Prints version information
+</code></pre>
+<p>OPTIONS:</p>
+<pre><code>-i, --input &lt;input&gt;      Input string or file path
+
+-o, --output &lt;output&gt;    Output uppercase or lowercase,  o = (u or l) [default: l]
+
+-t, --t &lt;t&gt;              Input-type t = (str or file) [default: str]</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Encrypt Command Line Tool]]></title>
         <id>https://ptechen.github.io/post/encrypt-command-line-tool/</id>
