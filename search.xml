@@ -17,6 +17,31 @@
     
     
     <entry>
+      <title>Varint介绍</title>
+      <link href="/2020/02/29/Varint%E4%BB%8B%E7%BB%8D/"/>
+      <url>/2020/02/29/Varint%E4%BB%8B%E7%BB%8D/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/jacksu-tencent/p/3389843.html?utm_source=tuicool" target="_blank" rel="noopener">Varint介绍</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> algorithm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小而巧的数字压缩算法：zigzag</title>
       <link href="/2020/02/29/%E5%B0%8F%E8%80%8C%E5%B7%A7%E7%9A%84%E6%95%B0%E5%AD%97%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9Azigzag/"/>
       <url>/2020/02/29/%E5%B0%8F%E8%80%8C%E5%B7%A7%E7%9A%84%E6%95%B0%E5%AD%97%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9Azigzag/</url>
