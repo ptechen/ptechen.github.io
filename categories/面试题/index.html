@@ -5,15 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Etcd CAP原理 - 皮特辰</title>
+    <title>Category: 面试题 - 皮特辰</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="
-以数据为中心的一致性模型1.严格一致性2.顺序一致性3.因果一致性4.可穿行化一致性
-以用户为中心的一致性模型1.最终一致性
-Paxos算法（一致性算法）Raft算法（一致性算法）"> 
+    
     <meta name="author" content="皮特辰"> 
     <link rel="alternative" href="atom.xml" title="皮特辰" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -53,78 +50,130 @@ Paxos算法（一致性算法）Raft算法（一致性算法）">
     </div>
     <span id="config-title" style="display:none">皮特辰</span>
     <div id="loader"></div>
-    <div id="single">
-    <div class="scrollbar gradient-bg-rev"></div>
-<div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <div class="navigation animated fadeIn fast delay-1s">
-        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://ptechen.github.io">
-        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Etcd CAP原理</h3>
-        <div class="social">
-            <!--        <div class="like-icon">-->
-            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
-            <!--        </div>-->
-            <div>
-                <div class="share">
-                    
-                        <a href="javascript:;" class="iconfont icon-share1"></a>
-                        <div class="share-component-cc" data-disabled="facebook,douban,linkedin,diandian,tencent,google"></div>
-                    
-                </div>
-            </div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/whoami/" title="ABOUT" external="false">ABOUT</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="CATEGORIES" external="false">CATEGORIES</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="TAGS" external="false">TAGS</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="ARCHIVES" external="false">ARCHIVES</a>
+        </li>
+        
+    </ul>
+    <p class="copyright" id="copyright">
+        &copy; 2020 皮特辰.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme <a href="https://github.com/ptechen/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+    </p>
+</div>
+
+<div id="container">
+    
+<div class="search-box">
+    <form class="site-search-form">
+        <span class="iconfont icon-search"></span>
+        <input type="text" id="local-search-input" class="st-search-input" />
+        <div class="iconfont icon-cross search-box-close"></div>
+    </form>
+    <div class="search-scrollable">
+        <div id="local-search-result" class="local-search-result-cls" data-initialise="Initialising search index..."
+            data-start="Please input search keywords." data-empty="No result found, please try other keywords.">
+            <span>Please input search keywords.</span>
         </div>
     </div>
 </div>
-
-    <div class="section">
-        <div class=article-header-wrapper>
-    <div class="article-header">
-        <div class="article-cover animated fadeIn" style="
-            animation-delay: 600ms;
-            animation-duration: 1.2s;
-            background-image: 
-                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+<div id="header">
+    <div>
+        <div class="logo animated fadeInDown">
+            <img src="/img/favicon.png" alt="">
+            <a class="image-logo" href="/"></a>
+        </div>
+        <ul id="menu-menu" class="menu text-menu">
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/whoami/" title="ABOUT" external="false" class="menu-link">ABOUT</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/categories/" title="CATEGORIES" external="false" class="menu-link">CATEGORIES</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/tags/" title="TAGS" external="false" class="menu-link">TAGS</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/archives/" title="ARCHIVES" external="false" class="menu-link">ARCHIVES</a>
+            </li>
+            
+            
+            <li class="animated fadeInDown search-bar iconfont icon-search"></li>
+            
+        </ul>
+        <div class="iconfont icon-menu switchmenu gradient-text animated fadeInDown"></div>
+    </div>
+</div>
+<div id="screen">
+    <div id="mark">
+        <div class="cover animated fadeIn" style="
+            animation-delay: 900ms;
+            animation-duration: 2.8s;
+            background-image:
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.56), #100e17),
                 url(/img/cover.jpg);">
         </div>
-        <div class="else">
-            <p class="animated fadeInDown">
-                
-                <a href="/categories/Rust"><b>「
-                    </b>RUST<b> 」</b></a>
-                
-                February 28, 2020
-            </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/02/28/Etcd-CAP%E5%8E%9F%E7%90%86/" title="Etcd CAP原理" class="">Etcd CAP原理</a>
-            </h3>
+    </div>
+    
+    <div id="post0" class="else">
+        <p class="animated fadeInDown">
             
-            <p class="post-count animated fadeInDown">
-                
-                <span>
-                    <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    691
-                </span>
-                
-                
-                <span>
-                    <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    1 mins.
-                </span>
-                
-                
-                
-                <span id="busuanzi_container_page_pv">
-                    <b class="iconfont icon-read"></b> <i>Read count</i>
-                    <span id="busuanzi_value_page_pv">0</span>
-                </span>
-                
-            </p>
+            <a href="/categories/面试题"><b>「
+                </b>面试题<b> 」</b></a>
+            
+            February 29, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown">
+            <a href="/2020/02/29/golang%E8%B0%83%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%8C%E5%88%9B%E5%BB%BAgoroutine%EF%BC%8C%E7%B3%BB%E7%BB%9F%E7%BA%BF%E7%A8%8Bm/" title="golang调度学习-初始化，创建goroutine，系统线程m" class="posttitle">golang调度学习-初始化，创建goroutine，系统线程m</a></h3>
+        
+        <p class="post-count animated fadeInDown">
+            
+            <span>
+                <b class="iconfont icon-text2"></b> <i>Words count</i>
+                142
+            </span>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Rust/" rel="tag">Rust</a></li></ul>
+            <span>
+                <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                1 mins.
+            </span>
             
+            
+        </p>
+        
+        
+        <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Golang/" rel="tag">Golang</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a></li></ul>
+        
+        <div class="md-content animated fadeIn">
+            
+            <p><a href="https://blog.csdn.net/diaosssss/article/details/92830934" target="_blank" rel="noopener">golang调度学习-初始化，创建goroutine，系统线程m</a></p>
+
+            
+            <span class="read-more"><a href="/2020/02/29/golang%E8%B0%83%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%8C%E5%88%9B%E5%BB%BAgoroutine%EF%BC%8C%E7%B3%BB%E7%BB%9F%E7%BA%BF%E7%A8%8Bm/" title="Read article" class="posttitle">Read article</a>
+                <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
     </div>
+    
 </div>
 
 <div class="screen-gradient-after">
@@ -132,88 +181,67 @@ Paxos算法（一致性算法）Raft算法（一致性算法）">
         <div class="screen-gradient-content-inside">
             <div class="bold-underline-links screen-gradient-sponsor">
                 <p>
-                    <span class="animated fadeIn delay-1s"></span>
+                    <span class="typed-text"></span>
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="article">
-    <div class='main'>
-        <div class="content markdown animated fadeIn">
-            <p><img src="file:///Users/taochen/Documents/Gridea/post-images/1582870126188.png" alt=""><br><img src="file:///Users/taochen/Documents/Gridea/post-images/1582870403584.png" alt=""></p>
-<h3 id="以数据为中心的一致性模型"><a href="#以数据为中心的一致性模型" class="headerlink" title="以数据为中心的一致性模型"></a>以数据为中心的一致性模型</h3><p>1.严格一致性<br>2.顺序一致性<br>3.因果一致性<br>4.可穿行化一致性</p>
-<h3 id="以用户为中心的一致性模型"><a href="#以用户为中心的一致性模型" class="headerlink" title="以用户为中心的一致性模型"></a>以用户为中心的一致性模型</h3><p>1.最终一致性</p>
-<h3 id="Paxos算法（一致性算法）"><a href="#Paxos算法（一致性算法）" class="headerlink" title="Paxos算法（一致性算法）"></a>Paxos算法（一致性算法）</h3><h3 id="Raft算法（一致性算法）"><a href="#Raft算法（一致性算法）" class="headerlink" title="Raft算法（一致性算法）"></a>Raft算法（一致性算法）</h3>
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls"
-                data-autoplay="false">
-                <source type="audio/mpeg" src="">
-            </audio>
+    <div id="primary">
+        
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
             
-            <ul id="audio-list" style="display:none">
+                <a href="/categories/面试题">
+                  <b>「 </b>面试题<b> 」</b>
+                </a>
+            
+            February 29, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/02/29/go%E8%AF%AD%E8%A8%80%E5%B9%B6%E5%8F%91%E4%B9%8BMPG%E6%A8%A1%E5%9E%8B/" title="go语言并发之MPG模型" class="posttitle">go语言并发之MPG模型</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>Words count</i>
+                        104
+                    </span>
                 
                 
-                <li title='0' data-url='/statics/chengdu.mp3'></li>
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                        1 mins.
+                    </span>
                 
-                    
-            </ul>
+                
+            </p>
             
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Golang/" rel="tag">Golang</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a></li></ul>
             
+        
+        <div class="md-content animated fadeIn">
             
-    <div id='gitalk-container' class="comment link"
-        data-ae='true'
-        data-ci='Iv1.fe36d50a56d0c63b'
-        data-cs='066940d926bf2af64b3d216e1a6deb93d4b38dde'
-        data-r='blog-comments'
-        data-o='ptechen'
-        data-a='ptechen'
-        data-d=''
-    >Comments</div>
+                <p> <a href="https://zhuanlan.zhihu.com/p/62683990" target="_blank" rel="noopener">go语言并发之MPG模型</a></p>
 
-
             
-            
-        </div>
-        <div class="sidebar">
-            <div class="box animated fadeInRight">
-                <div class="subbox">
-                    <img src="https://res.cloudinary.com/tridiamond/image/upload/v1573019751/TriDiamond_logo_ui_xeublz.jpg" height=300 width=300></img>
-                    <p>皮特辰</p>
-                    <span>Think like an artist, develop like an artisan</span>
-                    <dl>
-                        <dd><a href="https://github.com/ptechen" target="_blank"><span
-                                    class=" iconfont icon-github"></span></a></dd>
-                        <dd><a href="" target="_blank"><span
-                                    class=" iconfont icon-twitter"></span></a></dd>
-                        <dd><a href="" target="_blank"><span
-                                    class=" iconfont icon-stack-overflow"></span></a></dd>
-                    </dl>
-                </div>
-                <ul>
-                    <li><a href="/">9 <p>Articles</p></a></li>
-                    <li><a href="/categories">7 <p>Categories</p></a></li>
-                    <li><a href="/tags">6 <p>Tags</p></a></li>
-                </ul>
-            </div>
-            
-            
-            
-            <div class="box sticky animated fadeInRight faster">
-                <div id="toc" class="subbox">
-                    <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#以数据为中心的一致性模型"><span class="toc-number">1.</span> <span class="toc-text">以数据为中心的一致性模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以用户为中心的一致性模型"><span class="toc-number">2.</span> <span class="toc-text">以用户为中心的一致性模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Paxos算法（一致性算法）"><span class="toc-number">3.</span> <span class="toc-text">Paxos算法（一致性算法）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Raft算法（一致性算法）"><span class="toc-number">4.</span> <span class="toc-text">Raft算法（一致性算法）</span></a></li></ol>
-                </div>
-            </div>
-            
-            
+            <span class="read-more"><a href="/2020/02/29/go%E8%AF%AD%E8%A8%80%E5%B9%B6%E5%8F%91%E4%B9%8BMPG%E6%A8%A1%E5%9E%8B/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
     </div>
 </div>
 
+
     </div>
+    
 </div>
+<div id="preview"></div>
+
     <div id="back-to-top" class="animated fadeIn faster">
         <div class="flow"></div>
         <span class="percentage animated fadeIn faster">0%</span>
