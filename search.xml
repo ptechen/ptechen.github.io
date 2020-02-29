@@ -17,6 +17,31 @@
     
     
     <entry>
+      <title>小而巧的数字压缩算法：zigzag</title>
+      <link href="/2020/02/29/%E5%B0%8F%E8%80%8C%E5%B7%A7%E7%9A%84%E6%95%B0%E5%AD%97%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9Azigzag/"/>
+      <url>/2020/02/29/%E5%B0%8F%E8%80%8C%E5%B7%A7%E7%9A%84%E6%95%B0%E5%AD%97%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%EF%BC%9Azigzag/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/zgwangbo/article/details/51590186" target="_blank" rel="noopener">小而巧的数字压缩算法：zigzag</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> algorithm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Protobuf VS Json</title>
       <link href="/2020/02/29/protobuf-vs-json/"/>
       <url>/2020/02/29/protobuf-vs-json/</url>
@@ -33,7 +58,9 @@
       
         <tags>
             
-            <tag> protobuf,json </tag>
+            <tag> protobuf </tag>
+            
+            <tag> json </tag>
             
         </tags>
       
