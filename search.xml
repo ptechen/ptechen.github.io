@@ -17,6 +17,35 @@
     
     
     <entry>
+      <title>Go内存分配那些事，就这么简单！</title>
+      <link href="/2020/02/29/Go%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8C%E5%B0%B1%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95%EF%BC%81/"/>
+      <url>/2020/02/29/Go%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8C%E5%B0%B1%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/shijingxiang/articles/11466957.html" target="_blank" rel="noopener">Go内存分配那些事，就这么简单！</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面试题 </category>
+          
+          <category> Golang </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试题 </tag>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>深入Golang之sync.Pool详解</title>
       <link href="/2020/02/29/%E6%B7%B1%E5%85%A5Golang%E4%B9%8Bsync-Pool%E8%AF%A6%E8%A7%A3/"/>
       <url>/2020/02/29/%E6%B7%B1%E5%85%A5Golang%E4%B9%8Bsync-Pool%E8%AF%A6%E8%A7%A3/</url>
@@ -122,9 +151,9 @@
       
         <tags>
             
-            <tag> algorithm </tag>
-            
             <tag> 面试题 </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
@@ -151,9 +180,9 @@
       
         <tags>
             
-            <tag> algorithm </tag>
-            
             <tag> 面试题 </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
