@@ -5,12 +5,39 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2020/03/01/hello-world/"/>
-      <url>/2020/03/01/hello-world/</url>
+      <link href="/2020/03/04/hello-world/"/>
+      <url>/2020/03/04/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Gitlab+Gitlab-CI+Docker实现持续集成(CI)与持续部署(CD)</title>
+      <link href="/2020/03/04/Gitlab-Gitlab-CI-Docker%E5%AE%9E%E7%8E%B0%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90-CI-%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2-CD/"/>
+      <url>/2020/03/04/Gitlab-Gitlab-CI-Docker%E5%AE%9E%E7%8E%B0%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90-CI-%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2-CD/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/liuge36/p/9882629.html" target="_blank" rel="noopener">Gitlab+Gitlab-CI+Docker实现持续集成(CI)与持续部署(CD)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Gitlab </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Gitlab </tag>
+            
+            <tag> Docker </tag>
+            
+        </tags>
       
     </entry>
     
